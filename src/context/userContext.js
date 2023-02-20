@@ -1,8 +1,17 @@
-import { createContext } from 'react'
+import React, { createContext } from 'react';
 
-const UserContext = createContext()
+const UserContext = createContext();
 
-const UserProvider = UserContext.Provider
-const UserConsumer = UserContext.Consumer
+const UserState = (props) => {
 
-export { UserConsumer, UserProvider }
+    const [num, setNum] = React.useState(0)
+
+
+    return (
+        <UserContext.Provider value={{ num, setNum }}>
+            {props.children}
+        </UserContext.Provider>
+    )
+}
+export { UserContext };
+export default UserState

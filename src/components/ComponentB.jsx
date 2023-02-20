@@ -1,14 +1,13 @@
 import React from "react";
-import { UserConsumer } from "../context/userContext";
+import { useContext } from "react";
+import {UserContext} from "../context/userContext";
 
 const ComponentB = () => {
+  const { num, setNum } = useContext(UserContext);
   return (
-    <UserConsumer>
-      {(username) => {
-        return <h1>Hello {username}</h1>;
-      }}
-    </UserConsumer>
+    <div>
+      <button onClick={()=>(setNum(num+1))}>Clicked {num} time</button>
+    </div>
   );
 };
-
 export default ComponentB;
