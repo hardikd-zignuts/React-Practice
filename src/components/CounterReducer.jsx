@@ -1,5 +1,6 @@
 import React, { useReducer } from "react";
 const initialValue = 0;
+
 const reducer = (currentState, action) => {
   switch (action) {
     case "increment":
