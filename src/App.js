@@ -1,15 +1,12 @@
 import "./App.css";
-import ComponentA from "./components/ComponentA";
-import UserState from './context/userContext'
+import Posts from "./components/Posts";
 
 function App() {
   return (
     <>
-      <UserState>
-        <div className="App">
-          <ComponentA />
-        </div>
-      </UserState>
+      <div className="App">
+        <Posts />
+      </div>
     </>
   );
 }
