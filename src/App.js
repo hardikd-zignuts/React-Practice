@@ -1,11 +1,11 @@
 import "./App.css";
-import TitleEffect from "./components/TitleEffect";
+import CounterReducer from "./components/CounterReducer";
 
 function App() {
   return (
     <>
       <div className="App">
-        <TitleEffect />
+        <CounterReducer />
       </div>
     </>
   );
