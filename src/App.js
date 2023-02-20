@@ -1,11 +1,11 @@
 import "./App.css";
-import PostForm from "./components/PostForm";
+import CounterPrevState from "./components/CounterPrevState";
 
 function App() {
   return (
     <>
       <div className="App">
-        <PostForm />
+        <CounterPrevState />
       </div>
     </>
   );
