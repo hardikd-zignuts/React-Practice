@@ -1,11 +1,11 @@
 import "./App.css";
-import CounterPrevState from "./components/CounterPrevState";
+import TitleEffect from "./components/TitleEffect";
 
 function App() {
   return (
     <>
       <div className="App">
-        <CounterPrevState />
+        <TitleEffect />
       </div>
     </>
   );
