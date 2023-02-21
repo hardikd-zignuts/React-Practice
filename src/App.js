@@ -1,11 +1,11 @@
 import "./App.css";
-import CounterReducer from "./components/CounterReducer";
+import FetchDataUsingReducer from "./components/FetchDataUsingReducer";
 
 function App() {
   return (
     <>
       <div className="App">
-        
+        <FetchDataUsingReducer />
       </div>
     </>
   );
