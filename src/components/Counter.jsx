@@ -1,13 +1,10 @@
-import React, { useState } from 'react'
+import React, { useState } from "react";
 
-const Counter = (props) => {
-    const [count, setCount] = useState(0);
-    const handleCount = () => setCount(count + 1);
-    return (
-        <div>
-            {props.render(count, handleCount)}
-        </div>
-    )
-}
+const Counter = ({ render, children }) => {
+  const [count, setCount] = useState(0);
+  const handleCount = () => setCount(count + 1);
 
-export default Counter
+  return <div>{render(count, handleCount)}</div>;
+};
+
+export default Counter;

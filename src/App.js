@@ -1,11 +1,11 @@
 import "./App.css";
-import FetchDataUsingReducer from "./components/FetchDataUsingReducer";
+import UseCallbackDemo from "./components/UseCallbackDemo";
 
 function App() {
   return (
     <>
       <div className="App">
-        <FetchDataUsingReducer />
+        <UseCallbackDemo />
       </div>
     </>
   );
