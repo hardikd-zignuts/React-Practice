@@ -1,11 +1,11 @@
 import "./App.css";
-import ButtonCounter1 from "./components/ButtonCounter1";
+import InputHook from "./components/InputHook";
 
 function App() {
   return (
     <>
       <div className="App">
-        <ButtonCounter1 />
+        <InputHook />
       </div>
     </>
   );
