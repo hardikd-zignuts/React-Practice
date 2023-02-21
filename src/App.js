@@ -1,11 +1,11 @@
 import "./App.css";
-import UseCallbackDemo from "./components/UseCallbackDemo";
+import ButtonCounter1 from "./components/ButtonCounter1";
 
 function App() {
   return (
     <>
       <div className="App">
-        <UseCallbackDemo />
+        <ButtonCounter1 />
       </div>
     </>
   );
